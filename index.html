@@ -73,7 +73,7 @@
           (event) => {
             // convert message to formatted JSON text for display
             const data = JSON.parse(event.data);
-            const str = JSON.stringify(data.state, null, 2);
+            const str = JSON.stringify(data, null, 2);
 
             if (debug) {
               const out = document.getElementById("out");
